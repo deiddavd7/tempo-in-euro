@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <link rel="manifest" href="manifest.json" />
-<meta name="theme-color" content="#00c853" />
-<link rel="icon" href="icon-192.png" type="image/png" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tempo in Euro</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#00c853" />
+  <link rel="icon" href="icon-192.png" type="image/png" />
 </head>
 <body>
   <div class="container">
     <h1>Tempo in Euro</h1>
 
-    <label for="euroMinuto">€ per minuto:</label>
-    <input type="number" id="euroMinuto" placeholder="es. 0.50" step="0.01" />
+    <label for="euroOra">€ per ora:</label>
+    <input type="number" id="euroOra" placeholder="es. 10.00" step="0.01" />
 
     <div class="display">
-      <p>Tempo: <span id="tempo">00:00</span></p>
-      <p>Totale: € <span id="totale">0.00</span></p>
+      <p>⏱ Tempo: <span id="tempo">00:00</span></p>
+      <p>💵 Totale: € <span id="totale">0.00</span></p>
     </div>
 
-    <!-- PULSANTI -->
-    <button id="toggleBtn">Start</button>
-    <button id="resetBtn">Reset</button>
+    <button id="toggleBtn">▶ Start</button>
+    <button id="resetBtn">🔄 Reset</button>
   </div>
 
   <script src="script.js"></script>
